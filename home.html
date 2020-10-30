@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="css/cover.css" rel="stylesheet">
+    <script type="text/javascript" src="js/scroller.js"></script>
+    <script src="https://kit.fontawesome.com/e43599ff83.js" crossorigin="anonymous"></script>
   </head>
 
   <body class="text-center">
@@ -24,13 +26,13 @@
 
       <main role="main" class="inner cover">
         <div class="card" style="width: 25rem;">
-          <img class="card-img-top" height="300" src="media/obama.jpg" alt="Card image cap">
+          <img id="card-pic" class="card-img-top" height="300" src="media/obama.jpg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Barak Obama</h5>
-            <p class="card-text">implement slideshow</p>
-            <a href="#" class="btn btn-success">Match Icon</a>
-            <a href="#" class="btn btn-primary">Now Icon</a>
-            <a href="#" class="btn btn-danger">No icon</a>
+            <h5 id="card-name" class="card-title">Barak Obama</h5>
+            <p id="card-bio" class="card-text">implement slideshow</p>
+            <button onclick="next()" class="btn btn-danger"><i class="fas fa-times"></i></a>
+            <button onclick="next()" class="btn btn-primary"><i class="fas fa-star"></i></a>
+            <button onclick="next()" class="btn btn-success"><i class="fas fa-heart"></i></a>
           </div>
         </div>
       </main>

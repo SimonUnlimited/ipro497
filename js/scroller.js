@@ -1,5 +1,5 @@
-[
-    {
+json =
+    [{
         "state_name": "Alaska",
         "state_name_slug": "alaska",
         "state_code": "AK",
@@ -5298,5 +5298,32 @@
         "twitter_handle": "SenatorEnzi",
         "twitter_url": "https://twitter.com/SenatorEnzi",
         "photo_url": "https://cdn.civil.services/us-senate/headshots/512x512/michael-enzi.jpg"
-    }
-]
+    }];
+
+function makestack(){
+  var nums = Array.from(Array(100).keys()),
+    ranNums = [],
+    i = nums.length,
+    j = 0;
+
+  while (i--) {
+      j = Math.floor(Math.random() * (i+1));
+      ranNums.push(nums[j]);
+      nums.splice(j,1);
+  }
+  i = 0;
+  return ranNums;
+}
+
+function next(){
+  if(i<100){
+    var entry = json[stack[i]];
+    console.log(entry)
+    document.getElementById("card-name").innerHTML = entry.name;
+    document.getElementById("card-bio").innerHTML = entry.biography;
+    document.getElementById("card-pic").src = entry.photo_url;
+    i+=1;
+  }
+}
+var i =0 ;
+var stack = makestack();
