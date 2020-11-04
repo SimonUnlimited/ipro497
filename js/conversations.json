@@ -1,0 +1,15 @@
+[
+  {
+    "userID":"1",
+    "candidateID":"2",
+    "log":[
+      {
+        "messageID":0,
+        "fromID":1,
+        "toID":2,
+        "message":"hey",
+        "timestamp":1999239
+      }
+    ],
+  }
+]

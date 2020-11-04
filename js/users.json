@@ -1,9 +1,20 @@
 [
   {
   "name":"test user",
+  "id":1,
+  "is_candidate":"false",
   "avatar_url":"",
   "matches":["key1"],
   "phone":"111-222-3333",
-  "sent_messages":[""]
+  "conversations":["key1"]
   },
+  {
+    "name":"test user",
+    "id":2,
+    "is_candidate":"true",
+    "avatar_url":"",
+    "matches":["key1"],
+    "phone":"111-222-3333",
+    "conversations":["key1"]
+    },
 ]
